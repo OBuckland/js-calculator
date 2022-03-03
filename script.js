@@ -3,13 +3,21 @@ const numberButtons = document.querySelectorAll(".number-btn");
 const functionButtons = document.querySelectorAll("function-btn")
 const allButtons = document.querySelectorAll("button")
 const clearButton = document.querySelector("#clear")
-const addButton = document.querySelector("#function-add")
-const minusButton = document.getElementById("function-minus")
-let currentCharacter = [];
+const addButton = document.getElementById("add")
+const minusButton = document.getElementById("minus")
+const percentButton = document.getElementById("percent")
+const divideButton = document.getElementById("divide")
+const equalsButton = document.getElementById("equals")
+const mathFunction = document.querySelectorAll(".math-function")
 
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+let currentCharacter = "";
+
 // let sum = []
 // const selectedButton = display.innerHTML
+
+// INPUT 1
+// const input1 = 
+// INPUT 2
 
 //This function needs to return a number to the display when the number buttons are clicked
 numberButtons.forEach(button => {
@@ -19,23 +27,49 @@ numberButtons.forEach(button => {
     })
 })
 
+//
+mathFunction.forEach(button => {
+    button.addEventListener(("click"), (event) => {
+        currentCharacter = event.target.innerHTML;
+        display.innerHTML += event.target.innerHTML;
+    })
+})
+
+
 // CLEAR BUTTON
-clearButton.addEventListener("click", () => display.innerHTML = "")
+clearButton.addEventListener(("click"), () => {
+    if (currentCharacter == "C") {
+        display.innerHTML = " ";
+    } 
+    else {
+        display.innerHTML = display.innerHTML.slice(0, display.innerHTML.length-1);
+    }
+    currentCharacter = "C";
+})
+
+
 
 
 //ADDITON FUNCTION
-addButton.addEventListener(("click"), () => {
-  const totalSum = [`${display.innerHTML} +`];
-    display.innerHTML = totalSum;
-})
+// For addition I need the display values to be added together when the calculate
+ //button is selceted
+// addButton.addEventListener(("click"), () => {
+//   const totalSum = [`${display.innerHTML} +`];
+//     display.innerHTML = totalSum;
+// })
 
-//MINUS FUNCTION
-minusButton.addEventListener(("click"), () => {
-    const totalSum = [`${display.innerHTML} -`];
-      display.innerHTML = totalSum;
-  })
+// //MINUS FUNCTION
+// minusButton.addEventListener(("click"), () => {
+//     const totalSum = [`${display.innerHTML} -`];
+//       display.innerHTML = totalSum;
+//   })
 
 
+// // EQUALS FUNCTION
+// equalsButton.addEventListener(("click"), () => {
+//     currentCharacter += `${display.innerHTML}`;
+//     const finalSum = 
+// })
 
 // export const totalScoresArr = (scoresArr) => {
 //   const totalScore = scoresArr.reduce((total, current) => (total += current), 0);
@@ -59,7 +93,7 @@ minusButton.addEventListener(("click"), () => {
 //   const totalScore = scoresArr.reduce((total, current) => (total += current), 0);
 //   return totalScore;
 
-// For addition I need the display values to be added together when the calculate button is selceted
+
 
 ///numberButtons.addEventListener("click", () => display.innerHTML = 0)
 
