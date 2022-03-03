@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins&display=swap');
+$font-body: "poppins";
+$colour-background:  rgb(16,10,58);
+$colour-dark-purple: rgba(74, 40, 143, 1);
+$colour-light-purple: rgba(106, 64, 192, 1);
+$colour-pink: rgba(237, 152, 183, 1);
+
+* {
+    background-color: $colour-background;
+    font-family: $font-body;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#display {
+    width: 302px;
+    height: 90px;
+    background-color: $colour-dark-purple;
+    padding: 10px;
+}
+
+button {
+    width: 60px;
+    height: 60px;
+    //space between 20px
+    margin: 10px;
+}
+
+#btn0 {
+    width: 140px;
+    margin: 10px;
+}
+
+
+.number-btn {
+    background-color: $colour-light-purple;
+}
+
+.function-btn {
+    background-color: $colour-pink;
+}
