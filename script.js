@@ -4,6 +4,7 @@ const functionButtons = document.querySelectorAll("function-btn")
 const allButtons = document.querySelectorAll("button")
 const clearButton = document.querySelector("#clear")
 const addButton = document.querySelector("#function-add")
+const minusButton = document.getElementById("function-minus")
 let currentCharacter = [];
 
 const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
@@ -27,6 +28,12 @@ addButton.addEventListener(("click"), () => {
   const totalSum = [`${display.innerHTML} +`];
     display.innerHTML = totalSum;
 })
+
+//MINUS FUNCTION
+minusButton.addEventListener(("click"), () => {
+    const totalSum = [`${display.innerHTML} -`];
+      display.innerHTML = totalSum;
+  })
 
 
 
