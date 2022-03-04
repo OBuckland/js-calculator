@@ -1,10 +1,10 @@
 const display = document.querySelector("#display");
-const numberButtons = document.querySelectorAll(".number-btn");
-const equationButtons = document.querySelectorAll(".equation-btn")
-const allButtons = document.querySelectorAll("button")
-const clearButton = document.querySelector("#clear")
-const percentButton = document.getElementById("percent")
-const equalsButton = document.getElementById("equals")
+const numberBtns = document.querySelectorAll(".number-btn");
+const equationBtns = document.querySelectorAll(".equation-btn")
+const allBtns = document.querySelectorAll("button")
+const clearBtn = document.querySelector("#clear")
+const percentBtn = document.getElementById("percent")
+const equalsBtn = document.getElementById("equals")
 const mathFunction = document.querySelectorAll(".math-function")
 let currentCharacter = "";
 const inputLengthCheck = () => {
@@ -20,7 +20,7 @@ const inputLengthCheck = () => {
 
 
 // SHOW UP SELCTED NUMBER BUTTON ON DISPLAY AND CHARACTER LIMIT TO 15
-numberButtons.forEach(button => {
+numberBtns.forEach(button => {
     button.addEventListener(("click"), (event) => {
         inputLengthCheck();
         if (inputLengthWithinLimit === true) {
@@ -31,19 +31,26 @@ numberButtons.forEach(button => {
 }); 
 
 //EQUATION BUTTONS
-equationButtons.forEach(button => {
+
+const operators = ["+", "-", "*", "/"]
+
+
+equationBtns.forEach(button => {
    button.addEventListener(("click"), (event) => {
-       if (display.innerHTML.includes("+")) {   
-           currentCharacter = event.target.innerHTML;  
+    inputLengthCheck();
+       if ( inputLengthWithinLimit === true && operators.includes(currentCharacter) === false) {
+        currentCharacter = event.target.innerHTML;
+        display.innerHTML += event.target.innerHTML;
        }
-       else  {
-       currentCharacter = event.target.innerHTML;
-       display.innerHTML += event.target.innerHTML;}
+
    })
 })
 
+
+
+
 // CLEAR BUTTON
-clearButton.addEventListener(("click"), () => {
+clearBtn.addEventListener(("click"), () => {
     if (currentCharacter == "C") {
         display.innerHTML = " ";
     } 
@@ -53,9 +60,8 @@ clearButton.addEventListener(("click"), () => {
     currentCharacter = "C";
 })
 
-
 // EQUALS BUTTON 
-equalsButton.addEventListener("click", () => {
+equalsBtn.addEventListener("click", () => {
     if (display.innerHTML.includes("x")== true) {
         calculation = display.innerHTML.split("x");
         calculationResult = Number(calculation[0]) * Number(calculation[1]);
@@ -76,6 +82,6 @@ equalsButton.addEventListener("click", () => {
 })
 
  // PERCENT BUTTON 
-percentButton.addEventListener("click", () => {
+percentBtn.addEventListener("click", () => {
     display.innerHTML  = display.innerHTML/100;
 })
