@@ -6,10 +6,22 @@ $colour-light-purple: rgba(106, 64, 192, 1);
 $colour-pink: rgba(237, 152, 183, 1);
 
 * {
-    background-color: $colour-background;
     font-family: $font-body;
     color: whitesmoke;
     font-weight: bold;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+border: solid $colour-dark-purple;
+width: 374px;
+margin-left: auto;
+margin-right: auto;
+background-color: $colour-background;
+border-radius: 10px;
 }
 
 div {
@@ -24,12 +36,19 @@ div {
     height: 90px;
     background-color: $colour-dark-purple;
     padding: 10px;
+    border-radius: 10px;
 }
 
 button {
     width: 60px;
     height: 60px;
     //space between 20px
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#clear {
+    width: 140px;
     margin: 10px;
 }
 
@@ -47,6 +66,10 @@ button {
     background-color: $colour-pink;
 }
 
-.math-function {
+.equation-btn {
     background-color: $colour-pink;
+}
+
+#percent {
+        background-color: $colour-pink;
 }

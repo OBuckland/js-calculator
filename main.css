@@ -1,9 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins&display=swap");
 * {
-  background-color: #100a3a;
   font-family: "poppins";
   color: whitesmoke;
   font-weight: bold;
+}
+
+body {
+  background-color: black;
+}
+
+main {
+  border: solid #4a288f;
+  width: 374px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #100a3a;
+  border-radius: 10px;
 }
 
 div {
@@ -18,11 +30,18 @@ div {
   height: 90px;
   background-color: #4a288f;
   padding: 10px;
+  border-radius: 10px;
 }
 
 button {
   width: 60px;
   height: 60px;
+  margin: 10px;
+  border-radius: 10px;
+}
+
+#clear {
+  width: 140px;
   margin: 10px;
 }
 
@@ -39,6 +58,10 @@ button {
   background-color: #ed98b7;
 }
 
-.math-function {
+.equation-btn {
+  background-color: #ed98b7;
+}
+
+#percent {
   background-color: #ed98b7;
 }
