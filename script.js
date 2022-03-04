@@ -3,12 +3,10 @@ const numberButtons = document.querySelectorAll(".number-btn");
 const equationButtons = document.querySelectorAll(".equation-btn")
 const allButtons = document.querySelectorAll("button")
 const clearButton = document.querySelector("#clear")
-const addButton = document.getElementById("add")
-const minusButton = document.getElementById("minus")
 const percentButton = document.getElementById("percent")
-const divideButton = document.getElementById("divide")
 const equalsButton = document.getElementById("equals")
 const mathFunction = document.querySelectorAll(".math-function")
+let currentCharacter = "";
 const inputLengthCheck = () => {
     if (display.innerHTML.length<15) {
         inputLengthWithinLimit = true;
@@ -17,7 +15,7 @@ const inputLengthCheck = () => {
     }
 }
 
-let currentCharacter = "";
+
 
 
 
@@ -32,34 +30,7 @@ numberButtons.forEach(button => {
     })
 }); 
 
-
-
-// EQUATION BUTTONS
-// equationButtons.forEach(button => {
-//     button.addEventListener(("click"), (event) => {
-//         if (display.innerHTML.includes("+"||"-"||"*"||"/")=== false) {
-//             currentCharacter = event.target.innerHTML;
-//             display.innerHTML += event.target.innerHTML;
-//         }
-//         else {
-//             display.innerHTML = "";
-            
-//        }
- 
-//  }) })  
-
-// const equationButtonsNew = ["+", "-", "*", "/"];
-//  equationButtons.forEach(button => {
-//     button.addEventListener(("click"), (event) => {
-//         if (display.innerHTML.includes(equationButtonsNew)) {   
-//             currentCharacter = event.target.innerHTML;  
-//         }
-//         else  {
-//         currentCharacter = event.target.innerHTML;
-//         display.innerHTML += event.target.innerHTML;}
-//     })
-// })
-
+//EQUATION BUTTONS
 equationButtons.forEach(button => {
    button.addEventListener(("click"), (event) => {
        if (display.innerHTML.includes("+")) {   
@@ -70,6 +41,7 @@ equationButtons.forEach(button => {
        display.innerHTML += event.target.innerHTML;}
    })
 })
+
 // CLEAR BUTTON
 clearButton.addEventListener(("click"), () => {
     if (currentCharacter == "C") {
