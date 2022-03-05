@@ -11,7 +11,7 @@ body {
 
 main {
   border: solid #4a288f;
-  width: 374px;
+  width: 80vw;
   margin-left: auto;
   margin-right: auto;
   background-color: #100a3a;
@@ -26,7 +26,7 @@ div {
 }
 
 #display {
-  width: 302px;
+  width: 60vw;
   height: 90px;
   background-color: #4a288f;
   padding: 10px;
@@ -34,7 +34,7 @@ div {
 }
 
 button {
-  width: 60px;
+  width: 20vw;
   height: 60px;
   margin: 10px;
   border-radius: 10px;

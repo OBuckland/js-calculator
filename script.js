@@ -7,6 +7,7 @@ const percentBtn = document.getElementById("percent")
 const equalsBtn = document.getElementById("equals")
 const mathFunction = document.querySelectorAll(".math-function")
 let currentCharacter = "";
+const operators = ["+", "-", "*", "/"]
 const inputLengthCheck = () => {
     if (display.innerHTML.length<15) {
         inputLengthWithinLimit = true;
@@ -28,22 +29,39 @@ numberBtns.forEach(button => {
 }); 
 
 //EQUATION BUTTONS
-
-const operators = ["+", "-", "*", "/"]
-
-
 equationBtns.forEach(button => {
    button.addEventListener(("click"), (event) => {
     inputLengthCheck();
        if (inputLengthWithinLimit === true && operators.includes(currentCharacter) === false) {
-        currentCharacter = event.target.innerHTML;
-        display.innerHTML += event.target.innerHTML;
+       
+        if (display.innerHTML.includes("x")== true) {
+            calculation = display.innerHTML.split("x");
+            calculationResult = Number(calculation[0]) * Number(calculation[1]);
+            display.innerHTML = `${calculationResult}${event.target.innerHTML}`;
+        }
+        else if (display.innerHTML.includes("÷")== true) {
+            calculation = display.innerHTML.split("÷");
+            calculationResult = Number(calculation[0]) / Number(calculation[1]);
+            display.innerHTML = `${calculationResult}${event.target.innerHTML}`;
+        }
+        else if (display.innerHTML.includes("-")== true) {
+            calculation = display.innerHTML.split("-");
+            calculationResult = Number(calculation[0]) - Number(calculation[1]);
+            display.innerHTML = `${calculationResult}${event.target.innerHTML}`;
+        }
+        else if (display.innerHTML.includes("+")== true) {
+            calculation = display.innerHTML.split("+");
+            calculationResult = Number(calculation[0]) + Number(calculation[1]);
+            display.innerHTML = `${calculationResult}${event.target.innerHTML}`;
+        }
+        else {
+            currentCharacter = event.target.innerHTML;
+            display.innerHTML += event.target.innerHTML;
+        }
+
        }
    })
-})
-
-
-
+});
 
 // CLEAR BUTTON
 clearBtn.addEventListener(("click"), () => {
