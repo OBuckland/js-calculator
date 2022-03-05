@@ -16,9 +16,6 @@ const inputLengthCheck = () => {
 }
 
 
-
-
-
 // SHOW UP SELCTED NUMBER BUTTON ON DISPLAY AND CHARACTER LIMIT TO 15
 numberBtns.forEach(button => {
     button.addEventListener(("click"), (event) => {
@@ -38,11 +35,10 @@ const operators = ["+", "-", "*", "/"]
 equationBtns.forEach(button => {
    button.addEventListener(("click"), (event) => {
     inputLengthCheck();
-       if ( inputLengthWithinLimit === true && operators.includes(currentCharacter) === false) {
+       if (inputLengthWithinLimit === true && operators.includes(currentCharacter) === false) {
         currentCharacter = event.target.innerHTML;
         display.innerHTML += event.target.innerHTML;
        }
-
    })
 })
 
