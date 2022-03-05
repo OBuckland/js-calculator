@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Poppins&display=swap');
+$font-body: "poppins";
+$colour-background:  rgb(16,10,58);
+$colour-dark-purple: rgba(74, 40, 143, 1);
+$colour-light-purple: rgba(106, 64, 192, 1);
+$colour-pink: rgba(237, 152, 183, 1);
+
+* {
+    font-family: $font-body;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+main {
+    border: solid $colour-dark-purple;
+    background-color: $colour-background;
+}
+
+body {
+    background-color: black;
+}
+
+.number-btn {
+    background-color: $colour-light-purple;
+}
+
+.function-btn {
+    background-color: $colour-pink;
+}
+
+.equation-btn {
+    background-color: $colour-pink;
+}
+
+#percent {
+        background-color: $colour-pink;
+}

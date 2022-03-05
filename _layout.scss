@@ -1,0 +1,42 @@
+//Layout and sizing 
+
+main {
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#display {
+    width: 60vw;
+    height: 90px;
+    background-color: $colour-dark-purple;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button {
+    width: 20vw;
+    height: 60px;
+    //space between 20px
+    margin: 10px;
+    border-radius: 10px;
+    // add max width here 
+}
+
+#clear {
+    width: 140px;
+    margin: 10px;
+}
+
+#btn0 {
+    width: 140px;
+    margin: 10px;
+}
