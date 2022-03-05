@@ -5,17 +5,46 @@
   font-weight: bold;
 }
 
+main {
+  border: solid #4a288f;
+  background-color: #100a3a;
+}
+
 body {
   background-color: black;
 }
 
+.number-btn {
+  background-color: #6a40c0;
+}
+
+.function-btn {
+  background-color: #ed98b7;
+}
+
+.equation-btn {
+  background-color: #ed98b7;
+}
+
+#display {
+  background-color: #4a288f;
+}
+
+#percent {
+  background-color: #ed98b7;
+}
+
 main {
-  border: solid #4a288f;
+  margin-top: 100px;
   width: 80vw;
   margin-left: auto;
   margin-right: auto;
-  background-color: #100a3a;
   border-radius: 10px;
+}
+@media screen and (min-width: 500px) {
+  main {
+    width: 400px;
+  }
 }
 
 div {
@@ -28,9 +57,9 @@ div {
 #display {
   width: 60vw;
   height: 90px;
-  background-color: #4a288f;
   padding: 10px;
   border-radius: 10px;
+  text-align: end;
 }
 
 button {
@@ -48,20 +77,4 @@ button {
 #btn0 {
   width: 140px;
   margin: 10px;
-}
-
-.number-btn {
-  background-color: #6a40c0;
-}
-
-.function-btn {
-  background-color: #ed98b7;
-}
-
-.equation-btn {
-  background-color: #ed98b7;
-}
-
-#percent {
-  background-color: #ed98b7;
 }
