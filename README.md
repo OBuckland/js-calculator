@@ -2,7 +2,7 @@
 ***
 
 ### **Description**
-Calculator built using HTML, JavaSscript, and SCSS. Able to perform addition, subtraction, division and multiplcation. It also has a percentage function and can handle decimals.  
+Calculator built using HTML, JavaScript, and SCSS. Able to perform addition, subtraction, division and multiplication. It also has a percentage function and can handle decimals.  
 
 
 
@@ -26,7 +26,7 @@ Calculator built using HTML, JavaSscript, and SCSS. Able to perform addition, su
 ### **Design**
 *   Designed using figma
 *   Built using a mobile first approach
-*   Modled on an andriod phone calculator
+*   Modelled on an android phone calculator
 *   Responsive to device size
 
 
