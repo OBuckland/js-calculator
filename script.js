@@ -5,7 +5,7 @@ const clearBtn = document.querySelector("#clear")
 const percentBtn = document.querySelector("#percent")
 const equalsBtn = document.querySelector("#equals")
 let currentCharacter = "";
-const operators = ["+", "-", "*", "/"]
+const operators = ["+", "-", "x", "/"]
 const inputLengthCheck = () => {
     if (display.innerHTML.length<15) {
         inputLengthWithinLimit = true;
