@@ -11,7 +11,7 @@ $colour-pink: rgba(237, 152, 183, 1);
     font-weight: bold;
 }
 
-main {
+.calculator {
     border: solid $colour-dark-purple;
     background-color: $colour-background;
 }
@@ -20,22 +20,23 @@ body {
     background-color: black;
 }
 
-.number-btn {
-    background-color: $colour-light-purple;
-}
+.calc-btns {
+    &__number-btn {
+        background-color: $colour-light-purple;
+    }
 
-.function-btn {
-    background-color: $colour-pink;
-}
-
-.equation-btn {
-    background-color: $colour-pink;
+    &__function-btn {
+        background-color: $colour-pink;
+    }
+    
+    &__equation-btn {
+        background-color: $colour-pink;
+    }
 }
 
 #display {
     background-color: $colour-dark-purple;
 }
-
 
 #percent {
         background-color: $colour-pink;

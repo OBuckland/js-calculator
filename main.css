@@ -5,7 +5,7 @@
   font-weight: bold;
 }
 
-main {
+.calculator {
   border: solid #4a288f;
   background-color: #100a3a;
 }
@@ -14,15 +14,13 @@ body {
   background-color: black;
 }
 
-.number-btn {
+.calc-btns__number-btn {
   background-color: #6a40c0;
 }
-
-.function-btn {
+.calc-btns__function-btn {
   background-color: #ed98b7;
 }
-
-.equation-btn {
+.calc-btns__equation-btn {
   background-color: #ed98b7;
 }
 
@@ -54,6 +52,10 @@ div {
   flex-direction: row;
 }
 
+.calc-display {
+  padding: 2vw;
+}
+
 #display {
   width: 60vw;
   height: 90px;
@@ -70,11 +72,11 @@ button {
 }
 
 #clear {
-  width: 140px;
+  width: 50vw;
   margin: 10px;
 }
 
 #btn0 {
-  width: 140px;
+  width: 50vw;
   margin: 10px;
 }

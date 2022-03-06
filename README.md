@@ -1,24 +1,41 @@
 # JavaScript Calculator 
-
-![screenshot-calculator](./images/screenshot-calculator.png)
-
+***
 
 ### Description 
-Calculator built using HTML, JavaSscript and SASS. The calculator is able to perform the following opperations: addition, subtraction, division and multiplcation. It also have a percentage function and can handle decimals. 
+Calculator built using HTML, JavaSscript, and SCSS. Able to perform addition, subtraction, division and multiplcation. It also has a percentage function and can handle decimals.  
+
+**
 
 ### Table of contents
-    MVP
-    Links
-    Questions 
-    
-### MVP
-Requirements: 
-• Accept a minimum of 2 inputs, perform an operation and return the output.
-• Contain number keys 0-9.
-• Contain operator keys (+, -, *, /).
-• Should handle decimals.
+    ------------
+    |Technology|
+    ------------
+    |Design|
+    ------------
+    |Images|
+    ------------
+    |Links|
+    ------------
+
+### Technology 
+• JavaScript
+• HTML
+• SCSS
+• BEM
+• GitHub
+
+### Design
+• Designed using figma
+• Built using a mobile first approach
+• Modled on an andriod phone calculator
+• Responsive to device size
+
+### Images
+![screenshot-calculator](./images/calculator-screenshot.png)
 
 ### Links
-Link to the calculator
+[GitHub](https://github.com/OBuckland/js-calculator "GitHub repository")
 
-### Questions section 
+[Figma](https://www.figma.com/file/EeIKn05uzHS8RvLBAlEMRx/js-calculator "Figma design")
+
+[Link to Calculator](http://127.0.0.1:5501/index.html "The Calculator")

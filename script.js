@@ -1,9 +1,9 @@
 const display = document.querySelector("#display");
-const numberBtns = document.querySelectorAll(".number-btn");
-const equationBtns = document.querySelectorAll(".equation-btn")
+const numberBtns = document.querySelectorAll(".calc-btns__number-btn");
+const equationBtns = document.querySelectorAll(".calc-btns__equation-btn")
 const clearBtn = document.querySelector("#clear")
-const percentBtn = document.getElementById("percent")
-const equalsBtn = document.getElementById("equals")
+const percentBtn = document.querySelector("#percent")
+const equalsBtn = document.querySelector("#equals")
 let currentCharacter = "";
 const operators = ["+", "-", "*", "/"]
 const inputLengthCheck = () => {
