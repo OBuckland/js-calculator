@@ -15,7 +15,7 @@ const inputLengthCheck = () => {
 }
 
 
-// SHOW UP SELCTED NUMBER BUTTON ON DISPLAY AND CHARACTER LIMIT TO 15
+// SHOW UP SELECTED NUMBER BUTTON ON DISPLAY AND CHARACTER LIMIT TO 15
 numberBtns.forEach(button => {
     button.addEventListener(("click"), (event) => {
         inputLengthCheck();
