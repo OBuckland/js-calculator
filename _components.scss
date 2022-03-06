@@ -1,0 +1,38 @@
+
+main {
+    margin-top: 100px;
+    width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    @media screen and (min-width: 500px) {
+        width: 400px;
+    }
+}
+.calc-display {
+    padding: 2vw;
+}
+
+#display {
+    width: 60vw;
+    height: 90px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+button {
+    width: 20vw;
+    height: 60px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+#clear {
+    width: 50vw;
+    margin: 10px;
+}
+
+#btn0 {
+    width: 50vw;
+    margin: 10px;
+}
