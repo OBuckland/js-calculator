@@ -2,7 +2,7 @@
 ***
 
 ### **Description**
-Calculator built using HTML, JavaScript, and SCSS. Able to perform addition, subtraction, division and multiplication. It also has a percentage function and can handle decimals.  
+Calculator built using JavaScript, HTML, CSS, SCSS and BEM. This is a simple calculator that is able to perform addition, subtraction, division and multiplication. It also has a percentage function and can handle decimals.   
 
 
 
@@ -11,6 +11,7 @@ Calculator built using HTML, JavaScript, and SCSS. Able to perform addition, sub
 |---|
 | Technology |
 | Design |
+| Functionality |
 | Images |
 | Links |
 
@@ -18,6 +19,7 @@ Calculator built using HTML, JavaScript, and SCSS. Able to perform addition, sub
 ### **Technology**
 *   JavaScript
 *   HTML
+*   CSS
 *   SCSS
 *   BEM
 *   GitHub
@@ -28,6 +30,13 @@ Calculator built using HTML, JavaScript, and SCSS. Able to perform addition, sub
 *   Built using a mobile first approach
 *   Modelled on an android phone calculator
 *   Responsive to device size
+
+
+### **Functionality**
+* Performing an equation - for addition, subtraction, division and multiplication you need two inputs. Whereas the percentage button can be used on a single input.
+* Multiple sums - when you add an additional operator the current sum will be calculated. The display will show the total for the previous sum and add the new operator in the display.
+* Clear button - if clicked once it will delete the last character, if clicked twice it will clear the display.
+* Input - numbers are limited to 14.
 
 
 ### **Images**
