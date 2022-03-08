@@ -4,6 +4,7 @@ const equationBtns = document.querySelectorAll(".calc-btns__equation-btn")
 const clearBtn = document.querySelector("#clear")
 const percentBtn = document.querySelector("#percent")
 const equalsBtn = document.querySelector("#equals")
+const decimalBtn = document.querySelector("#decimal")
 let currentCharacter = "";
 const operators = ["+", "-", "x", "/"]
 const inputLengthCheck = () => {
@@ -13,7 +14,6 @@ const inputLengthCheck = () => {
         inputLengthWithinLimit = false;
     }
 }
-
 
 // SHOW UP SELECTED NUMBER BUTTON ON DISPLAY AND CHARACTER LIMIT TO 15
 numberBtns.forEach(button => {
@@ -56,7 +56,6 @@ equationBtns.forEach(button => {
             currentCharacter = event.target.innerHTML;
             display.innerHTML += event.target.innerHTML;
         }
-
        }
    })
 });
@@ -96,4 +95,12 @@ equalsBtn.addEventListener("click", () => {
  // PERCENT BUTTON 
 percentBtn.addEventListener("click", () => {
     display.innerHTML  = display.innerHTML/100;
-})
+});
+
+// //DECIMAL BUTTON 
+decimalBtn.addEventListener(("click"), () => {
+    inputLengthCheck();
+    if (inputLengthWithinLimit === true && currentCharacter != event.target.innerHTML) {
+        currentCharacter = event.target.innerHTML; display.innerHTML += event.target.innerHTML;
+    }
+});

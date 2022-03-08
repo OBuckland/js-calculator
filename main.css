@@ -32,6 +32,21 @@ body {
   background-color: #ed98b7;
 }
 
+#decimal {
+  background-color: #ed98b7;
+}
+
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+#display {
+  text-align: end;
+}
+
 main {
   margin-top: 100px;
   width: 80vw;
@@ -45,13 +60,6 @@ main {
   }
 }
 
-div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-}
-
 .calc-display {
   padding: 2vw;
 }
@@ -61,7 +69,6 @@ div {
   height: 90px;
   padding: 10px;
   border-radius: 10px;
-  text-align: end;
 }
 
 button {
