@@ -2,7 +2,7 @@
 ***
 
 ### **Description**
-Calculator built using JavaScript, HTML, CSS, SCSS and BEM. This is a simple calculator that is able to perform addition, subtraction, division and multiplication. It also has a percentage function and can handle decimals.   
+Calculator built using JavaScript, HTML, CSS, SCSS and BEM. This is a simple calculator that is able to perform addition, subtraction, division and multiplication. It also has a percentage function and can handle decimals. Link to the [calculator](https://obuckland.github.io/js-calculator/).   
 
 
 
@@ -44,8 +44,8 @@ Calculator built using JavaScript, HTML, CSS, SCSS and BEM. This is a simple cal
 
 
 ### **Links**
-[GitHub repository](https://github.com/OBuckland/js-calculator "GitHub")
+[GitHub repository](https://github.com/OBuckland/js-calculator "Link to GitHub")
 
-[Figma design](https://www.figma.com/file/EeIKn05uzHS8RvLBAlEMRx/js-calculator "Figma")
+[Figma design](https://www.figma.com/file/EeIKn05uzHS8RvLBAlEMRx/js-calculator "Link to Figma")
 
-[The Calculator](http://127.0.0.1:5501/index.html "Link to Calculator")
+[The Calculator](https://obuckland.github.io/js-calculator/ "Link to Calculator")
